@@ -1,0 +1,115 @@
+/* Halaman Awal */
+#welcome-screen {
+    text-align: center;
+    margin-top: 20vh;
+}
+
+#welcome-screen h1 {
+    color: #c0daeb;
+    font-size: 2.5em;
+}
+
+#welcome-screen input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd7d7;
+}
+
+#welcome-screen button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: rgb(47, 221, 231);
+    background-color: #e4eeca;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6b1cc; /* Warna latar belakang untuk seluruh halaman */
+}
+
+#welcome-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130vh; /* Mengisi seluruh tinggi layar */
+    background-image: url('c:\Users\ASUS\Downloads\poto6.jpg'); /* Ganti dengan nama file gambar latar belakang */
+    background-size: cover; /* Memastikan gambar mengisi area */
+    color: rgb(234, 230, 240); /* Mengubah warna teks agar kontras */
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+    margin-top: 20px; /* Jarak dari atas galeri ke elemen sebelumnya */
+    background-color: rgba(157, 247, 255, 0.8); /* Latar belakang transparan untuk galeri */
+    border-radius: 10px; /* Membuat sudut galeri lebih halus */
+}
+
+.main-photo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(199, 191, 191, 0.2); /* Menambahkan bayangan pada foto */
+    animation: fadeIn 1s ease-in forwards; /* Efek fade-in */
+    transition: transform 0.3s;
+}
+
+.main-photo:hover {
+    transform: scale(1.1) rotate(5deg); /* Efek zoom dan rotasi saat hover */
+}
+
+
+/* Animasi Fade-In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(2);
+    }
+}
+
+.main-photo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+    opacity: 2; /* Awal dalam keadaan tidak terlihat */
+    animation: fadeIn 1s ease-in forwards; /* Animasi fade-in */
+    transition: transform 0.3s;
+}
+
+/* Hover Zoom Effect */
+.main-photo:hover {
+    transform: scale(1.1); /* Zoom saat hover */
+}
+
+/* Gaya Tombol Exit */
+#exitButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: rgb(14, 179, 230);
+    background-color: #161515;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#exitButton:hover {
+    background-color: #990000;
+}

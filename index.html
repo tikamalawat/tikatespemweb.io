@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situss web tikaa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="ssstik.io_1728024212487.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Halaman Awal -->
+    <div id="welcome-screen">
+        <h1>Halooo! 💖</h1>
+        <p>Masukkan nama dulu, yuk!</p>
+        <input type="text" id="nameInput" placeholder="Nama kamu..." required>
+        <button onclick="enterSite()">Masuk</button>
+    </div>
+
+    <!-- Konten Situs (Tersembunyi di Awal) -->
+    <div id="main-content" style="display: none;">
+        <header>
+            <h1>Selamat Datang di WEB tikaa!</h1>
+            <p id="welcomeMessage"></p>
+        </header>
+
+        <section id="gallery">
+            <h2>Foto Kita ❤️</h2>
+            <div class="photo-grid">
+                <img src="poto1.jpg" alt="Kenangan 1" class="main-photo">
+                <img src="poto2.jpg" alt="Kenangan 2" class="main-photo">
+                <img src="poto3.jpg" alt="Kenangan 3" class="main-photo">
+                <img src="poto4.jpg" alt="Kenangan 4" class="main-photo">
+                <img src="poto5.jpg" alt="Kenangan 5" class="main-photo">
+            </div>
+        </section>
+        
+        <footer>
+            <p>Made with ❤️ by Tikaa Malawattt</p>
+            <button id="exitButton" onclick="exitSite()">Exit</button>
+        </footer>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<h1>Ini Index</h1>
+<a href="https://www.instagram.com/tikaamalawattt_/profilecard/?igsh=MXZqNnhkeGx6NnlkeA==">Pergi ke instagram </a>
+</html>

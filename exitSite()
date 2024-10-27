@@ -1,0 +1,15 @@
+function exitSite() {
+    // Tampilkan GIF lucu
+    const funnyGif = document.getElementById("funnyGif");
+    funnyGif.style.display = "block"; // Menampilkan GIF
+
+    // Tampilkan pesan terima kasih
+    alert("Terima kasih telah mengunjungi situs!");
+
+    // Aksi setelah beberapa detik untuk menutup atau mengarahkan
+    setTimeout(() => {
+        // Mengarahkan ke halaman lain (opsional)
+        window.location.href = "https://www.google.com"; // Arahkan ke situs lain
+        // window.close(); // Menutup jendela (mungkin tidak berfungsi di semua browser)
+    }, 3000); // Menunggu 3 detik sebelum mengarahkan atau menutup
+}
